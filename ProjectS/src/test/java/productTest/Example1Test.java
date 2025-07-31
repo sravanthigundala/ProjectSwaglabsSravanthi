@@ -5,6 +5,10 @@ import java.time.Duration;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 import genericlibrary.BaseConfig;
 import Pagerepository.CartPage;
 import Pagerepository.CheckoutOverviewPage;
@@ -23,6 +27,24 @@ public class Example1Test extends BaseConfig {
 
 	@Test(groups="RT",priority=1,enabled=true,invocationCount = 1,dataProvider ="checkoutInfo")
 	public void orderProducts(String FirstName,String LastName,String Zipcode) {
+		
+		//create the Test Information.
+				 test=report.createTest("Regressiontest");
+				
+				//Step Information
+				test.log(Status.INFO, "Step1:Launch the Browser Succesfully");
+				
+				test.log(Status.INFO, "Step2:Navigating To the Application via url Succesfully");
+				
+				test.log(Status.PASS, "Step3:Verified the Webpage Successfully");
+				
+				Reporter.log("sravanthi",true);
+				Reporter.log("FirstName",true);
+				Reporter.log("LastName",true);
+				Reporter.log("Zipcode",true);
+				
+				
+				
 
 		// Wait statement
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -32,9 +54,6 @@ public class Example1Test extends BaseConfig {
 
 		// Create an object for Home page
 		
-		
-		
-		
 		HomePage hpobj = new HomePage(driver);
 
 		// Use the webElement from POM class
@@ -43,6 +62,15 @@ public class Example1Test extends BaseConfig {
 		hpobj.getfourthproduct().click();
 		// Verify Add To Cart button is Displayed & is Enabled
 		Assert.assertTrue(hpobj.getaddtocartbtn4().isDisplayed() && hpobj.getaddtocartbtn4().isEnabled());
+		
+		if(hpobj.getfourthproduct().isDisplayed()) {
+			
+			test.log(Status.PASS, "Step4:Verified the WebElement Displayed");
+			}
+			 else {
+				test.log(Status.SKIP, "Step5:Element is Hidden");
+				
+			}
 		// Click on Add To Cart button
 		hpobj.getaddtocartbtn4().click();
 		// Verify Back To Products link is Displayed & is Enabled
@@ -124,6 +152,30 @@ public class Example1Test extends BaseConfig {
 		ckovobj.getfinishbtn().click();
 		
 		//Assert.fail();
+	
+		
+		
+		}
+	@Test
+	 
+	public void  orderproduct2() {
+		
+		//create the test information.
+		test =report.createTest("RegressionTest");
+		
+		//Step information
+		test.log(Status.INFO, "Step1:Launch the Browser Succesfully");
 
 	}
+	@Test
+	 
+	public void  orderproduct3() {
+		
+		//create the test information.
+		test =report.createTest("RegressionTest");
+		
+		//Step information
+		test.log(Status.INFO, "Step1:Launch the Browser Succesfully");
+	
+}
 }

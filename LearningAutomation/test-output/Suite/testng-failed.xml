@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <exclude name="IT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="DWS_Assignment.Pooja_17">
+        <methods>
+          <include name="Deleteproduct"/>
+          <include name="Updateproduct"/>
+          <include name="BrowserSetup"/>
+          <include name="Login"/>
+          <include name="Addproduct"/>
+          <include name="BrowserTerminate"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- DWS_Assignment.Pooja_17 -->
+      <class name="DWS_Assignment.Sravanthi_11">
+        <methods>
+          <include name="BrowserSetup"/>
+          <include name="Login"/>
+          <include name="BrowserTerminate"/>
+          <include name="Addproduct"/>
+          <include name="Deleteproduct"/>
+          <include name="Logout"/>
+          <include name="Updateproduct"/>
+        </methods>
+      </class> <!-- DWS_Assignment.Sravanthi_11 -->
+      <class name="DWS_Assignment.RangiSumadhar_09">
+        <methods>
+          <include name="Place_Order"/>
+          <include name="BrowserSetup"/>
+          <include name="Login"/>
+          <include name="BrowserTerminate"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- DWS_Assignment.RangiSumadhar_09 -->
+      <class name="DWS_Assignment.Pranitha_07">
+        <methods>
+          <include name="BrowserSetup"/>
+          <include name="Login"/>
+          <include name="Addproduct"/>
+          <include name="BrowserTerminate"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- DWS_Assignment.Pranitha_07 -->
+      <class name="DWS_Assignment.Sudarshan_13">
+        <methods>
+          <include name="BrowserSetup"/>
+          <include name="orderProduct"/>
+          <include name="Login"/>
+          <include name="BrowserTerminate"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- DWS_Assignment.Sudarshan_13 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -37,7 +37,7 @@ public String LastName;
 public String Zipcode;
 	
 public static WebDriver staticDriver;
-
+ 
 
 @BeforeTest
  

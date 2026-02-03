@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="FunctionalitySuite">
+	<test name="ChromeTest1">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+
+
+			<class name="DWS_Assignment.Akhil_01" />
+			<class name="DWS_Assignment.Anusha_02" />
+			<class name="DWS_Assignment.Manohar_03" />
+			<class name="DWS_Assignment.Narshima_04" />
+			<class name="DWS_Assignment.Nikhil_05" />
+			<class name="DWS_Assignment.Pooja_06" />
+
+		</classes>
+	</test> <!-- ChromeTest -->
+
+
+
+	<test name="ChromeTest2">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+
+			<class name="DWS_Assignment.Pranitha_07" />
+			<class name="DWS_Assignment.Ramya_08" />
+			<class name="DWS_Assignment.RangiSumadhar_09" />
+			<class name="DWS_Assignment.SaiSree_10" />
+			<class name="DWS_Assignment.Sravanthi_11" />
+			<class name="DWS_Assignment.SreeNavya_12" />
+
+
+		</classes>
+	</test>
+
+
+	<test name="ChromeTest3">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+
+			<class name="DWS_Assignment.Sudarshan_13" />
+			<class name="DWS_Assignment.Veerendra_14" />
+			<class name="DWS_Assignment.Venkatesh_15" />
+			<class name="DWS_Assignment.Shirisha_16" />
+			<class name="DWS_Assignment.Pooja_17" />
+			<class name="DWS_Assignment.Bhargavi_18" />
+
+		</classes>
+	</test>
+</suite> <!-- FunctionalitySuite -->
